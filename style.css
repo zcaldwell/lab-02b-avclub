@@ -1,0 +1,40 @@
+#top-bar {
+    border: 3px solid green;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+#top-bar div {
+    margin-right: 10px;
+}
+
+header {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    border: 3px solid purple;
+    display: flex;
+}
+
+nav div {
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 640px 1fr 1fr;
+    grid-template-rows: 340px 340px;
+    grid-template-areas:
+        "big story1 story2"
+        "big story3 story4"
+}
+
+#big {
+    grid-area: big;
+}
